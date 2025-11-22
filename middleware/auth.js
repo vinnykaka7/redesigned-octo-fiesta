@@ -8,7 +8,7 @@ export const checkApiKey = (req, res, next) => {
     });
   }
   
-  if (apiKey !== process.env.ADMIN_API_KEY) {
+  if (apiKey !== process.env.12345) {
     return res.status(401).json({
       success: false,
       error: 'Access denied. Invalid API key'
